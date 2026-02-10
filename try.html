@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Student Registration</title>
+    <style>
+        form {
+            width: 370px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Student Registration</h2>
+
+    <form>
+        <input type="text" placeholder="Name" required>
+
+        <input type="email" placeholder="Email" required>
+
+        <input type="tel" placeholder="Mobile Number" pattern="[0-9]{10}" title="Mobile Number must contain 10 digits"
+            required>
+
+        <input type="password" placeholder="Password" pattern=".{8,}"
+            title="Password must contain at least 8 characters" required>
+
+        <input type="password" placeholder="Confirm Password" pattern=".{8,}"
+            title="Password must contain at least 8 characters" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+
+</html>

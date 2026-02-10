@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hostel Complaint</title>
+<style>
+form {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+input, select, textarea {
+  margin: 8px 0;
+}
+</style>
+</head>
+
+<body>
+<h2>Hostel Complaint Form</h2>
+
+<form>
+  <input type="text" placeholder="Name" required>
+
+  <input type="number" placeholder="Room Number" required>
+
+  <select required>
+    <option value="">Select Issue</option>
+    <option>Electricity</option>
+    <option>Water</option>
+    <option>Cleanliness</option>
+  </select>
+
+  <textarea placeholder="Description (min 20 characters)"
+            minlength="20" required></textarea>
+
+  <button type="submit">Submit Complaint</button>
+</form>
+</body>
+</html>

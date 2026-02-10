@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+<h2>Login Form</h2>
+<form>
+    <label>Username:</label><br>
+    <input type="text" 
+           name="username" 
+           pattern="[A-Za-z]+" 
+           title="Username should contain only alphabets"
+           required>
+    <br><br>
+    <label>Password:</label><br>
+    <input type="password" 
+      name="password" 
+       pattern="(?=.*[0-9])(?=.*[!@#$%^&*]).+" 
+       title="Password must contain at least one number and one special character"
+           required>
+    <br><br>
+    <input type="submit" value="Login">
+   </form>
+  </body>
+</html>
